@@ -18,9 +18,7 @@ function App() {
   function onClickLocation(latlng: { lat: number; lng: number }) {
     const latitude = (Math.round(latlng.lat * 2) / 2).toFixed(1);
     const longitude = (Math.round(latlng.lng * 2) / 2).toFixed(1);
-    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-    console.log(waveData[`${longitude};${longitude}`]);
-    setHmax(waveData[`${longitude};${longitude}`]);
+    setHmax(waveData[`${longitude};${latitude}`]);
     setPosition(latlng);
   }
 
@@ -31,7 +29,7 @@ function App() {
           hmax={waveData["0.0;0.0"]}
           coordinates={{ lat: 0.0, lng: 0.0 }}
         />
-        {hmax && position && <WaveHeight hmax={hmax} coordinates={position} />}
+        <WaveHeight hmax={hmax} coordinates={position} />
         <WaveMap onClick={onClickLocation} position={position} />
       </div>
     </div>

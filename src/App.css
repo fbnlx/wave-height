@@ -1,11 +1,12 @@
 .App {
-  background-color: #f2fff3;
+  background-color: #020202;
 }
 .App__body {
   position: relative;
   z-index: 100;
-  height: calc(100vh - 60px);
+  height: 100vh;
   top: 0px;
+  padding: 1rem;
 }
 .App__body-left {
   padding: 10px;

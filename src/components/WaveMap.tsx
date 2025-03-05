@@ -1,5 +1,5 @@
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
-import Location from "./Location";
+import MapEvent from "./MapEvent";
 import "./WaveMap.css";
 import "leaflet/dist/leaflet.css";
 import leafletIcon from "../util/leafletIcon";
@@ -12,9 +12,9 @@ interface Props {
 export default function WaveMap({ onClick, position }: Props) {
   return (
     <MapContainer
-      className="wavemap-container"
-      center={[59.9096, 10.7474]}
-      zoom={13}
+      className="wavemap--container"
+      center={[5, 5]}
+      zoom={4}
       scrollWheelZoom={false}
     >
       <TileLayer
@@ -27,7 +27,7 @@ export default function WaveMap({ onClick, position }: Props) {
           icon={leafletIcon}
         ></Marker>
       )}
-      <Location onClick={onClick} />
+      <MapEvent onClick={onClick} />
     </MapContainer>
   );
 }
