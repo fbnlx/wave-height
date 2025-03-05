@@ -5,7 +5,7 @@
   box-shadow: 9px 13px 19px -13px rgba(0, 0, 0, 0.75);
   position: relative;
   z-index: 2;
-  height: 50%;
+  height: 400px;
   border-radius: 10px;
   width: 100%;
 }

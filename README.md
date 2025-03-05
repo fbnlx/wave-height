@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app displays an interactive map, where the user can click on any body of water to display the maximum wave height for the day 2019-01-01.
 
 ## Available Scripts
 

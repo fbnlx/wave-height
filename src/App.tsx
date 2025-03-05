@@ -3,6 +3,7 @@ import "./App.css";
 import WaveMap from "./components/WaveMap";
 import data from "./data/wave_data.json";
 import WaveHeight from "./components/WaveHeight";
+import Question3 from "./components/Answer3";
 
 type WaveData = Record<string, number>;
 
@@ -31,6 +32,7 @@ function App() {
         />
         <WaveHeight hmax={hmax} coordinates={position} />
         <WaveMap onClick={onClickLocation} position={position} />
+        <Question3 />
       </div>
     </div>
   );
